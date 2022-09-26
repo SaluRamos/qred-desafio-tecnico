@@ -21,8 +21,7 @@ public class Smoothie{
     public void setIngredients(String[] ingredients){
         TreeSet<String> ingredientsTree = new TreeSet<String>();
         for(int i = 0; i < ingredients.length; i++){
-            ingredients[i] = ingredients[i].toLowerCase();
-            ingredientsTree.add(ingredients[i]);
+            ingredientsTree.add(ingredients[i].toLowerCase());
         }
         this.ingredients = ingredientsTree;
     }
