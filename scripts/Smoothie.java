@@ -6,6 +6,11 @@ public class Smoothie{
     private String name;
     private TreeSet<String> ingredients;
 
+    public Smoothie(String name, String[] ingredients){
+        this.setName(name);
+        this.setIngredients(ingredients);
+    }
+
     public String getName(){
         return this.name;
     }

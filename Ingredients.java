@@ -78,12 +78,10 @@ public class Ingredients{
         BufferedReader fSmoothiesBuffer = new BufferedReader(fSmoothiesReader);
         String line = fSmoothiesBuffer.readLine();
         while(line != null){
-            Smoothie newSmoothie = new Smoothie();
             String[] newSmoothieParts = line.split(":");
             String newSmoothieName = newSmoothieParts[0];
             String[] newSmoothieIngredients = newSmoothieParts[1].split(",");
-            newSmoothie.setName(newSmoothieName);
-            newSmoothie.setIngredients(newSmoothieIngredients);
+            Smoothie newSmoothie = new Smoothie(newSmoothieName, newSmoothieIngredients);
             Ingredients.smoothies.put(newSmoothie.getName(), newSmoothie);
             line = fSmoothiesBuffer.readLine();
         }
