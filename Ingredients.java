@@ -30,7 +30,7 @@ public class Ingredients{
             System.out.println("api response = " + response);
             System.out.printf("Want to make a new request? ('n' to no, anything else to yes) ");
             String inputQuestionNewRequest = inputScanner.nextLine().toLowerCase();
-            if(inputQuestionNewRequest == "n"){
+            if(inputQuestionNewRequest.equals("n")){
                 System.out.println("BYE BYE!");
                 break;
             }
