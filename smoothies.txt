@@ -1,0 +1,4 @@
+Classic:strawberry,banana,pineapple,mango,peach,honey
+Freezie:blackberry,blueberry,black currant,grape juice,frozen yogurt
+Greenie:green apple,lime,avocado,spinach,ice,apple juice
+Just Desserts:banana,ice cream,chocolate,peanut,cherry

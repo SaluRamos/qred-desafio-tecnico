@@ -1,0 +1,4 @@
+este software foi desenvolvido usando o jdk 19
+
+para executar o software no windows, execute o arquivo "exec.bat".
+para executar o software no linux, execute o arquivo "exec.sh".
