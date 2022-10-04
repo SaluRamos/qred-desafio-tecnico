@@ -65,7 +65,11 @@ public class Ingredients{
                 recipe.append(value + ","); //adiciona ao final da string o ingrediente
             }
         }
-        recipe.deleteCharAt(recipe.length() - 1); //remove a virgula final da string
+        if(recipe.length() > 1){
+            recipe.deleteCharAt(recipe.length() - 1); //remove a virgula final da string
+        }else{
+            throw new IllegalArgumentException("o smoothie não possui ingredientes");
+        }
         return recipe.toString();
     }
 
